@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+
+.box {
+    flex: 1;
+    outline: 1px solid red;
+    min-width: 6.25%;
+    aspect-ratio: 1 / 1;
+}
