@@ -13,6 +13,5 @@ body {
 .box {
     flex: 1;
     outline: 1px solid black;
-    min-width: 6.25%;
     aspect-ratio: 1 / 1;
 }
