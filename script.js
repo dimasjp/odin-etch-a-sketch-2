@@ -1,5 +1,6 @@
 const board = document.querySelector('.container');
 const btnGenerate = document.querySelector('.btn-generate');
+const btnClear = document.querySelector('.btn-clear');
 
 btnGenerate.addEventListener('click', () => {
     let num = prompt('Grid Size');
@@ -9,6 +10,10 @@ btnGenerate.addEventListener('click', () => {
     } else {
         generateGrid(num);
     }
+})
+
+btnClear.addEventListener('click', () => {
+    clearGrid()
 })
 
 function generateGrid(num) {
@@ -25,6 +30,12 @@ function generateGrid(num) {
         box.addEventListener('mouseover', () => {
             box.style.backgroundColor = 'black';
         })
+    }
+}
+
+function clearGrid(){
+    for (const box of board.children) {
+        box.style.backgroundColor = 'white';
     }
 }
 
