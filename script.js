@@ -4,7 +4,7 @@ const btnClear = document.querySelector('.btn-clear');
 const btnColorPicker = document.querySelector('.color-picker');
 
 btnGenerate.addEventListener('click', () => {
-    let num = prompt('Grid Size');
+    const num = prompt('Grid Size');
     
     if (num > 100) {
         alert("Grid size should be 100 or smaller!")
@@ -64,6 +64,7 @@ function draw(e) {
         case "Rainbow":
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
             e.target.style.backgroundColor = "#" + randomColor;
+            break;
         default:
             break;
     }
